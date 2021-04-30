@@ -44,3 +44,21 @@ gpg -c [file_name] -> Encrypt a file
 gpg [file_name.gpg] -> Decrypt a file
 wc -> Show the number of words, lines, and bytes in a file
 
+Directory Navigation
+
+cd .. -> Move up one level in the directory tree structure
+cd -> Change directory to $HOME
+cd /chosen/directory -> Change location to a specified directory
+
+File Compression
+
+tar cf [compressed_file.tar] [file_name] -> Archive an existing file
+tar xf [compressed_file.tar] -> Extract an archived file
+tar czf [compressed_file.tar.gz] -> Create a gzip compressed tar file by running
+gzip [file_name] -> Compress a file with the .gz extension
+
+File Transfer
+
+scp [file_name.txt] [server/tmp] -> Copy a file to a server directory securely
+rsync -a [/your/directory] [/backup/] -> Synchronize the contents of a directory with a backup directory using the rsync command
+
